@@ -1,13 +1,17 @@
 # multicast groups:ports to test
 
-# CTS/CTQ multicast groups:
- https://www.ctaplan.com/publicdocs/ctaplan/Common_IP_Multicast_Distribution_Network_Specification.pdf
+# NYSE:
+ https://www.nyse.com/publicdocs/nyse/data/IP_Addresses.xlsx
 
-# UTP multicast groups:
+# NMS MULTICAST GROUPS - see the appendix :
+https://www.ctaplan.com/publicdocs/ctaplan/Common_IP_Multicast_Distribution_Network_Specification.pdf
+
+# UTP (NASDAQ) multicast groups:
  https://www.utpplan.com/DOC/IP_Addresses_for_UTP_Data_Feed_Services.pdf
+ https://nasdaqtrader.com/Trader.aspx?id=FeedIPS_Other
 
-# OPRA multicast groups:
- https://assets.website-files.com/5ba40927ac854d8c97bc92d7/642740d26251936268321fd2_Common-IP-Multicast-Distribution-Network_v1_52_030823.pdf
+# OTC Multicast Address Ports:
+ https://www.otcmarkets.com/files/binary-multi-cast-groups.pdf
 
 # CME:
  https://www.cmegroup.com/confluence/display/EPICSANDBOX/CME+MDP+3.0+Market+Data
