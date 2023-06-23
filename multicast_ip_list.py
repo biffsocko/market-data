@@ -1,10 +1,18 @@
 
 #!/usr/bin/env python3
-#####################################################
+###############################################################
 # TR Murphy
 # multicast_ip_list.py
 #
-# multicast groups:ports to test
+# List of some multicast groups and corresponding ports. Hopefully
+# this will save someone the time of having to type this stuff in 
+# themselves.  
+#
+# NOTE - this is an incomplete list. I've provided the documentation
+# below, if you don't see what you're looking for in any of the coded
+# dictionaries - you SHOULD find what you're looking for in those docs.
+#
+# NOTE - this is US Markets Centric. 
 #
 # NYSE:
 # https://www.nyse.com/publicdocs/nyse/data/IP_Addresses.xlsx
@@ -21,8 +29,7 @@
 #
 # CME:
 # https://www.cmegroup.com/confluence/display/EPICSANDBOX/CME+MDP+3.0+Market+Data
-#######################################################
-
+###############################################################
 # ARCA
 ARCHAWiredaddressports={  "224.0.59.128":23700,
                 "224.0.59.129":23701,
