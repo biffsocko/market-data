@@ -23,6 +23,12 @@ add more multicast addresses.  Our current list is a good start, however, I don'
 
 # How to use it
 <pre>
+
+import socket
+import os
+import sys
+import multicast_ip_list
+
  
  # pass in the interface name you're testing against and the list (the dictionary name)
  def goMulticast(INTERFACEIP, LIST):
