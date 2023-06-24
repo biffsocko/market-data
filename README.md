@@ -17,3 +17,38 @@ https://www.ctaplan.com/publicdocs/ctaplan/Common_IP_Multicast_Distribution_Netw
 <b>OTC Multicast Address Ports:</b> https://www.otcmarkets.com/files/binary-multi-cast-groups.pdf<br>
 
 <b>CME:</b> https://www.cmegroup.com/confluence/display/EPICSANDBOX/CME+MDP+3.0+Market+Data<br>
+
+# TODO
+add more multicast addresses.  Our current list is a good start, however, I don't have the replays and a number of other products. Additionally, I'd like to see non-US market data ported into this as well.   
+
+# How to use it
+<pre>
+ 
+ # pass in the interface name you're testing against and the list (the dictionary name)
+ def goMulticast(INTERFACEIP, LIST):
+    DEBUG=0
+    if(LIST=="CQSaddressportsA"):
+        getit=multicast_ip_list.CQSaddressportsA
+    elif(LIST=="OTCaddressportsA"):
+        getit=multicast_ip_list.OTCaddressportsA
+    else:
+        print("can not find "+LIST)
+        exit(1)
+
+    # traverse all the multicast groups and ports
+    for MCAST_GRP,MCAST_PORT in getit.items():
+        if(DEBUG==1):
+            print(MCAST_GRP+" "+str(MCAST_PORT)+" "+INTERFACEIP)
+ 
+        #  joinMcast is a function that takes the multicast group, port and local interface ip address and makes a socket connection
+        sock=joinMcast(MCAST_GRP,MCAST_PORT,INTERFACEIP)
+        sock.settimeout(10)
+        try:
+            # read data from the feed
+            sock.recv(10240)
+            sock.close()
+        except:
+            # uh-oh - the read failed or timed out.  print which group/port/list failed
+            print("failed reading group "+MCAST_GRP+ " on port "+str(MCAST_PORT)+" and interface: "+INTERFACEIP+" ("+LIST+")")
+ 
+</pre>
