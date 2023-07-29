@@ -1,7 +1,7 @@
 # multicast groups:ports to test
 
-# NOTE: all of the information in this project is publically available and the links to where the data is listed are provided below
-# None of this is proprietary information and this document contains no trade secrets.  
+## NOTE: all of the information in this project is publically available and the links to where the data is listed are provided below
+## None of this is proprietary information and this document contains no trade secrets.  
 
 List of some multicast groups and corresponding ports. Hopefully, this will save someone the time of having to type this stuff in  themselves.  
   * NOTE - This is an incomplete list. I've provided the documentation below, If you don't see what you're looking for in any of the coded dictionaries - you SHOULD find what you're looking for in those docs.
