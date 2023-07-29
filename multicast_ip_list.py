@@ -6,8 +6,11 @@
 # contains some market data groups in simple python dictionary
 #
 #
-# Cisco Specification
+# Cisco Specification: 
+# https://www.ciscopress.com/articles/article.asp?p=2928192&seqNum=5
+#
 # multicast groups:ports to test
+# ===============================
 #
 # CTS/CTQ multicast groups:
 # https://www.ctaplan.com/publicdocs/ctaplan/Common_IP_Multicast_Distribution_Network_Specification.pdf
