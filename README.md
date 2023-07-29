@@ -4,7 +4,8 @@ List of some multicast groups and corresponding ports. Hopefully this will save 
   * NOTE - this is an incomplete list. I've provided the documentation below, if you don't see what you're looking for in any of the coded dictionaries - you SHOULD find what you're looking for in those docs.
   * NOTE - this is US Markets Centric. 
 
-
+<b>CISCO Market Data Networking Notes:</b># Cisco Specification
+# multicast groups:ports to test
 
 <b>NYSE:</b> https://www.nyse.com/publicdocs/nyse/data/IP_Addresses.xlsx<br>
       
