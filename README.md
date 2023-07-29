@@ -17,7 +17,7 @@ https://www.ctaplan.com/publicdocs/ctaplan/Common_IP_Multicast_Distribution_Netw
 <b>OTC Multicast Address Ports:</b> https://www.otcmarkets.com/files/binary-multi-cast-groups.pdf<br>
 
 <b>CME:</b> https://www.cmegroup.com/confluence/display/EPICSANDBOX/CME+MDP+3.0+Market+Data<br>
-<b>CBOE MARKETNow Feeds:</b> 
+<b>CBOE MARKETNow Feeds:</b> https://cdn.cboe.com/resources/membership/MN_Multicast_Market_Data_Specification.pdf
 
 # TODO
 add more multicast addresses.  Our current list is a good start, however, I don't have the replays and a number of other products. Additionally, I'd like to see non-US market data ported into this as well.   
