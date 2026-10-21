@@ -7,6 +7,7 @@ dictionary renamed out from under the README.
 
 import ast
 import ipaddress
+import itertools
 import pathlib
 from collections import Counter
 
@@ -196,7 +197,7 @@ def test_consecutive_groups_have_consecutive_ports(name):
     if any(isinstance(v, list) for v in d.values()):
         pytest.skip("multi-port dict")
     entries = sorted((int(ipaddress.IPv4Address(g)), g, p) for g, p in d.items())
-    for (ip1, g1, p1), (ip2, g2, p2) in zip(entries, entries[1:]):
+    for (ip1, g1, p1), (ip2, g2, p2) in itertools.pairwise(entries):
         if ip2 == ip1 + 1:
             assert p2 == p1 + 1, f"{name}: {g1}:{p1} -> {g2}:{p2} breaks the sequence"
 
